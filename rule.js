@@ -16,13 +16,18 @@ module.exports = {
         const titled = titleCase(escapedLine);
         if (titled != escapedLine) {
           const column = 1;
-          const length = 1;
+          const length = line.length;
           addError(
             onError,
             lineNumber,
             `Title Case: 'Expected ${titled}, found ${escapedLine}'`,
             null,
             [ column, length ],
+            { // delete the whole line and insert the changed one
+              "editColumn": column,
+              "deleteCount": length, 
+              "insertText": titled
+            }
           );
         }
       });
