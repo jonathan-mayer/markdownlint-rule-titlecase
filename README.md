@@ -1,5 +1,9 @@
 # markdownlint-rule-titlecase
 
+> [!NOTE]  
+> This is an unofficial fork from [Anthony Shaws markdownlint-rule-titlecase](https://www.npmjs.com/package/markdownlint-rule-titlecase).
+> This package will be deprecated once [the pull request implementing the features added in this fork](https://github.com/tonybaloney/markdownlint-rule-titlecase/pull/3) is merged.
+
 Custom title case rule for markdownlint headers
 
 ![npm](https://img.shields.io/npm/v/markdownlint-rule-titlecase)
